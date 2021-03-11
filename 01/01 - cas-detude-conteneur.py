@@ -38,7 +38,7 @@ def login() -> json:
         "$and": [
             {"users.identifiers.type": "nucleotic"},
             {"users.identifiers.login": login},
-            {"identifiers.password": hashlib.sha512((password + hashSalt).encode('utf-8')).hexdigest()},CNI + retaper temoignage (cf. terams Claire)
+            {"identifiers.password": hashlib.sha512((password + hashSalt).encode('utf-8')).hexdigest()},
         ]
     }
     resultSet = client.global_driver.find('Licenses', queryFilter)
